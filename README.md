@@ -1,8 +1,12 @@
 # 📍 Beacon Calgary
 
-Beacon Calgary is a community-driven interactive web application that maps and displays vital resources across Calgary, including shelters, food banks, healthcare services, mental health support, legal aid, and more.
+Beacon Calgary is a community-focused web application designed to support individuals and families experiencing homelessness in Calgary.
 
-The app includes an AI chatbot, Beacon Bot, to help users find the right support.
+It brings together vital local services—emergency shelters, food banks, health clinics, mental health support, legal aid, and employment resources—into a single, easy-to-use platform. With an interactive city map and categorized filters, users can quickly find nearby services that match their needs.
+
+Whether someone is seeking a warm place to stay, a meal, mental health support, or legal guidance, Beacon Calgary empowers them with accurate, location-based information and up-to-date service availability.
+
+The app also features Beacon Bot, an AI-powered assistant that provides friendly, respectful, and non-judgmental guidance. Beacon Bot can answer questions, explain service options, and help users navigate difficult situations—especially for those who may feel overwhelmed or unsure where to begin.
 
 ## 🚀 Features
 
