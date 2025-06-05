@@ -1,0 +1,7 @@
+services:
+  BeaconCalgary:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENAI_API_KEY=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

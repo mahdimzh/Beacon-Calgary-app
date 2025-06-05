@@ -682,7 +682,10 @@ st.header("💬 Chat with Beacon Bot")
 
 if api_key_input:
     try:
-        client = OpenAI(api_key=api_key_input)
+        client = OpenAI(
+            base_url="https://openrouter.ai/api/v1",
+            api_key=api_key_input
+            )
     except Exception as e:
         st.error(f"Failed to initialize OpenAI client: {e}")
         client = None
@@ -736,7 +739,7 @@ if prompt := st.chat_input("Ask Beacon Bot a question..."):
                                [{"role": m["role"], "content": m["content"]} for m in st.session_state.messages]
 
                 completion = client.chat.completions.create(
-                    model="gpt-3.5-turbo", 
+                    model="google/gemma-3-1b-it:free", 
                     messages=api_messages,
                     stream=True
                 )
