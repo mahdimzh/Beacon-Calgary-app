@@ -682,10 +682,7 @@ st.header("💬 Chat with Beacon Bot")
 
 if api_key_input:
     try:
-        client = OpenAI(
-            base_url="https://openrouter.ai/api/v1",
-            api_key=api_key_input
-            )
+        client = OpenAI(api_key=api_key_input)
     except Exception as e:
         st.error(f"Failed to initialize OpenAI client: {e}")
         client = None
@@ -739,7 +736,7 @@ if prompt := st.chat_input("Ask Beacon Bot a question..."):
                                [{"role": m["role"], "content": m["content"]} for m in st.session_state.messages]
 
                 completion = client.chat.completions.create(
-                    model="google/gemma-3-1b-it:free", 
+                    model="gpt-3.5-turbo", 
                     messages=api_messages,
                     stream=True
                 )
@@ -764,10 +761,6 @@ elif not st.session_state.messages and client:
 # Footer
 st.markdown("---")
 st.markdown("""
-<style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-</style>
 <div style='text-align: center; color: #666; font-size: 0.9em;'>
     <p>Beacon Calgary - Connecting Community Resources</p>
     <p>For emergency situations, please call 911 | For crisis support, call 211</p>
