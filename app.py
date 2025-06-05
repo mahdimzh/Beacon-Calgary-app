@@ -764,6 +764,11 @@ elif not st.session_state.messages and client:
 # Footer
 st.markdown("---")
 st.markdown("""
+<style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+</style>
 <div style='text-align: center; color: #666; font-size: 0.9em;'>
     <p>Beacon Calgary - Connecting Community Resources</p>
     <p>For emergency situations, please call 911 | For crisis support, call 211</p>
