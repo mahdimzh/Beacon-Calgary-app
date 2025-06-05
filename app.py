@@ -767,7 +767,6 @@ st.markdown("""
 <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    header {visibility: hidden;}
 </style>
 <div style='text-align: center; color: #666; font-size: 0.9em;'>
     <p>Beacon Calgary - Connecting Community Resources</p>
