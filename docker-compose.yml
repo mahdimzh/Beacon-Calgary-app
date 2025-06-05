@@ -1,5 +1,5 @@
 services:
-  BeaconCalgary:
+  beaconcalgary:
     build: .
     ports:
       - "8501:8501"
